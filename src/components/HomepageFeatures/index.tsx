@@ -10,32 +10,31 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: 'General',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Information for etiquette, rules and general way of living and finding
+        your way around the country while being there.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Exploration',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Overview of points of interest, culinary experiences and so much more per
+        regions and counties.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Journeys',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Example itineraries that you can base your own adventure off of.
       </>
     ),
   },

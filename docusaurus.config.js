@@ -9,13 +9,13 @@ const projectName = "japantravels.github.io";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "My Site",
-  tagline: "Dinosaurs are cool",
+  title: "Japan Travels",
+  tagline: "Discover the culture, country and lands",
   url: `https://${organizationName}.github.io`,
   baseUrl: `/`,
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "throw",
-  favicon: "img/favicon.ico",
+  favicon: "img/torii.png",
   // GitHub Pages adds a trailing slash by default that I don't want
   trailingSlash: false,
 
@@ -60,10 +60,10 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "My Site",
+        title: "Japan Travels",
         logo: {
-          alt: "My Site Logo",
-          src: "img/logo.svg",
+          alt: "Japan Travels Logo",
+          src: "img/torii.png",
         },
         items: [
           {
