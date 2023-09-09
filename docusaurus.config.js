@@ -29,7 +29,7 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: "en",
-    locales: ["en"],
+    locales: ["en", "ro", "hu"],
   },
 
   presets: [
@@ -67,10 +67,25 @@ const config = {
         },
         items: [
           {
+            type: 'localeDropdown',
+          },
+          {
             type: "doc",
-            docId: "intro",
+            docId: "general/general-intro",
             position: "left",
-            label: "Tutorial",
+            label: "General",
+          },
+          {
+            type: "doc",
+            docId: "explore/explore-intro",
+            position: "left",
+            label: "Explore",
+          },
+          {
+            type: "doc",
+            docId: "journeys/journeys-intro",
+            position: "left",
+            label: "Journeys",
           },
           { to: "/blog", label: "Blog", position: "left" },
           {
@@ -84,11 +99,19 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "Docs",
+            title: "Pages",
             items: [
               {
-                label: "Tutorial",
-                to: "/docs/intro",
+                label: "General info",
+                to: "/docs/general/general-intro",
+              },
+              {
+                label: "Exploration",
+                to: "/docs/explore/explore-intro",
+              },
+              {
+                label: "Journeys",
+                to: "/docs/journeys/journeys-intro",
               },
             ],
           },
@@ -123,7 +146,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

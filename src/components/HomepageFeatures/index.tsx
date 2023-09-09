@@ -6,6 +6,7 @@ type FeatureItem = {
   title: string;
   Svg: React.ComponentType<React.ComponentProps<'svg'>>;
   description: JSX.Element;
+  to: string;
 };
 
 const FeatureList: FeatureItem[] = [
@@ -18,6 +19,7 @@ const FeatureList: FeatureItem[] = [
         your way around the country while being there.
       </>
     ),
+    to: "docs/general/general-intro"
   },
   {
     title: 'Exploration',
@@ -28,6 +30,7 @@ const FeatureList: FeatureItem[] = [
         regions and counties.
       </>
     ),
+    to: "docs/explore/explore-intro"
   },
   {
     title: 'Journeys',
@@ -37,14 +40,17 @@ const FeatureList: FeatureItem[] = [
         Example itineraries that you can base your own adventure off of.
       </>
     ),
+    to: "docs/journeys/journeys-intro"
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({title, Svg, description, to}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <a href={to}>
+          <Svg className={styles.featureSvg} role="img" />
+        </a>
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>

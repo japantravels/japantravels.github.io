@@ -1,0 +1,5 @@
+# Temples
+
+## Shinto
+
+## Etiquette
